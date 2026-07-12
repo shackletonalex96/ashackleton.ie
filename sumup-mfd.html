@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>MFD & CFD</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta name="robots" content="noindex, nofollow">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+  <link href="img/cube.png" rel="icon">
+  <link href="img/cube.png" rel="apple-touch-icon">
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700|Raleway:400,700&display=swap" rel="stylesheet">
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="vendor/line-awesome/css/line-awesome.min.css" rel="stylesheet">
+  <link href="vendor/aos/aos.css" rel="stylesheet">
+  <link href="vendor/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  
+<style>
+  .dev-timeline {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px 60px 20px;
+    max-width: 700px;
+    margin: 0 auto;
+    position: relative;
+  }
+  .dev-timeline .tl-line {
+    flex: 1;
+    height: 3px;
+    background: #ccc;
+  }
+  .dev-timeline .tl-line.active {
+    background: #0d1e2d;
+  }
+  .dev-timeline .tl-point {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    flex-shrink: 0;
+  }
+  .dev-timeline .tl-dot {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: #ccc;
+    border: 3px solid #ccc;
+    z-index: 1;
+  }
+  .dev-timeline .tl-dot.active {
+    background: #0d1e2d;
+    border-color: #0d1e2d;
+  }
+  .dev-timeline .tl-label {
+    position: absolute;
+    top: 36px;
+    font-family: "Inconsolata", monospace;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #ccc;
+    white-space: nowrap;
+  }
+  .dev-timeline .tl-label.active {
+    color: #0d1e2d;
+  }
+  @media (max-width: 480px) {
+    .dev-timeline .tl-label { font-size: 10px; top: 30px; }
+    .dev-timeline .tl-dot { width: 22px; height: 22px; }
+  }
+</style>
+
+</head>
+
+<body>
+  <!-- Password Protection -->
+  <script>
+    (function() {
+      if (sessionStorage.getItem('portfolio_auth') !== 'true') {
+        window.location.href = 'login.html';
+      }
+    })();
+  </script>
+
+  <div class="collapse navbar-collapse custom-navmenu" id="main-navbar">
+    <div class="container py-2 py-md-5">
+      <div class="row align-items-start">
+        <div class="col-md-2">
+          <ul class="custom-menu">
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="about.html">About Me</a></li>
+            <li><a href="works.html">Projects</a></li>
+          </ul>
+        </div>
+        <div class="col-md-6 d-none d-md-block mr-auto"></div>
+        <div class="col-md-4 d-none d-md-block">
+          <h3>Contact Me!</h3>
+          <p>Get in touch! <br> <a href="#">alex@shackleton.ie</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <nav class="navbar navbar-light custom-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Portfolio.</a>
+      <a href="#" class="burger" data-toggle="collapse" data-target="#main-navbar">
+        <span></span>
+      </a>
+    </div>
+  </nav>
+
+  <main id="main">
+
+    <div class="site-section">
+      <div class="container">
+        <div class="row mb-4 align-items-center">
+          <div class="col-md-6" data-aos="fade-up">
+            <h2>MFD & CFD</h2>
+            <h3>2025 – 2026</h3>
+            <p>SumUp's new Android-based POS system with integrated payments screen.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="site-section pb-0">
+        <div class="container">
+          <div class="row align-items-stretch">
+            <div class="col-md-8" data-aos="fade-up">
+              <img src="img/sumup-mfd.png" alt="MFD & CFD" class="img-fluid">
+            </div>
+            <div class="col-md-3 ml-auto" data-aos="fade-up" data-aos-delay="100">
+              <div class="sticky-content">
+                <h3 class="h3">Main Roles</h3>
+                <p class="mb-4"><span class="text-muted">Manufacturing Engineer & Mechanical Engineer</span></p>
+                <div class="mb-5">
+                  <p>A flagship next-generation product that required a full multi-product manufacturing line design from scratch. My involvement spanned line design, DFA reviews, in-office test rig development, PCBA fixture design, and product failure investigations during launch.</p>
+                </div>
+                <h4 class="h4 mb-3">What I did</h4>
+                <ul class="list-unstyled list-line mb-5">
+                  <li>Manufacturing Line Design.</li>
+                  <li>DFA Reviews.</li>
+                  <li>In-Office Functional Tester.</li>
+                  <li>PCBA Test Fixture.</li>
+                  <li>Product Failure Investigations.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="site-section pb-0" style="padding-top: 0;">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-10">
+              <div class="dev-timeline">
+  <div class="tl-point"><div class="tl-dot"></div><span class="tl-label">Proto</span></div>
+  <div class="tl-line"></div>
+  <div class="tl-point"><div class="tl-dot"></div><span class="tl-label">EVT</span></div>
+  <div class="tl-line"></div>
+  <div class="tl-point"><div class="tl-dot active"></div><span class="tl-label active">DVT</span></div>
+  <div class="tl-line active"></div>
+  <div class="tl-point"><div class="tl-dot active"></div><span class="tl-label active">PVT</span></div>
+  <div class="tl-line active"></div>
+  <div class="tl-point"><div class="tl-dot active"></div><span class="tl-label active">MP</span></div>
+</div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="site-section">
+        <div class="container">
+          <div class="row mb-4 align-items-center">
+
+            <div class="col-md-12" data-aos="fade-up">
+              <h3 class="h3">Manufacturing Line Design</h3>
+              <p class="mb-4"><span class="text-muted">Full design of a flexible, multi-product manufacturing line.</span></p>
+              <p>I was responsible for the full design of a multi-product manufacturing line for the MFD and CFD. The line was designed to be flexible — capable of speeding up or slowing down without significant impact on overall productivity, making it reactive to SumUp's volatile demand patterns. I led automation efforts on the line that increased productivity by 45%, and I scoped, audited, and onboarded multiple new specialist suppliers for key assembly tasks.</p>
+            </div>
+
+            <div class="col-md-12" data-aos="fade-up">
+              <h3 class="h3">DFA Reviews</h3>
+              <p class="mb-4"><span class="text-muted">Introducing structured design-for-assembly reviews into the company.</span></p>
+              <p>I introduced a structured approach to performing DFA reviews within SumUp, working closely with the mechanical design team to integrate this new practice into the company-wide design process. Through these reviews I caught and resolved multiple assembly and testing issues before they became problems on the production line — saving significant time and cost during the manufacturing ramp-up.</p>
+            </div>
+
+            <div class="col-md-12" data-aos="fade-up">
+              <h3 class="h3">In-Office Functional Tester</h3>
+              <p class="mb-4"><span class="text-muted">Solving a problem our suppliers said was impossible.</span></p>
+              <p>I built a functional test rig within an existing in-office test station to perform touchscreen testing, USB port testing (power and data), and button testing on the device. The button test was particularly challenging due to the button's location — on the back side of the screen, within a 7mm gap between the screen and the body. Several of our suppliers stated that automating this test was impossible. I was able to design, prototype, and validate a solution, which subsequently allowed us to fully automate the button test on the production line.</p>
+            </div>
+
+            <div class="col-md-12" data-aos="fade-up">
+              <h3 class="h3">PCBA Test Fixture</h3>
+              <p class="mb-4"><span class="text-muted">A low-cost fixture that saved €40k on a single build.</span></p>
+              <p>I designed, manufactured, and validated a general-purpose PCBA test fixture that could be used for early product builds as well as R&D activity in the office for future projects. This fixture ended up saving €40k on one early build alone — we were using prototype boards but had no way of flashing them at scale. Several of my low-cost fixtures (under €400 each) were sent to China for this build, allowing it to proceed as planned and avoiding the cost of commissioning a bespoke industrial tester for these units.</p>
+            </div>
+
+            <div class="col-md-12" data-aos="fade-up">
+              <h3 class="h3">Product Failure Investigations</h3>
+              <p class="mb-4"><span class="text-muted">Root cause analysis on field returns during product launch.</span></p>
+              <p>During the product launch I conducted multiple product failure investigations on devices returned from the field. I identified one critical mechanical flaw and worked closely with the design team to quickly rectify it. I also identified several process-related issues that were root-caused back to quality lapses at the factory. I worked with the OEM management team to introduce better training and safeguards to reduce the risk of recurrence.</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="site-section pb-0">
+        <div class="container">
+          <div class="row justify-content-center text-center mb-4">
+            <div class="col-5">
+              <h3 class="h3 heading">More Projects</h3>
+            </div>
+          </div>
+          <div class="row" data-aos="fade-up" data-aos-delay="200">
+            <div class="item col-sm-6 col-md-4 col-lg-4 mb-4">
+              <a href="sumup-poslite.html" class="item-wrap fancybox">
+                <div class="work-info">
+                  <h3>POS Lite</h3>
+                  <span>Manufacturing Engineer</span>
+                </div>
+                <img class="img-fluid" src="img/sumup-poslite.png">
+              </a>
+            </div>
+            <div class="item col-sm-6 col-md-4 col-lg-4 mb-4">
+              <a href="sumup-solotill.html" class="item-wrap fancybox">
+                <div class="work-info">
+                  <h3>Solo Till Printer</h3>
+                  <span>Manufacturing & Mechanical Engineer</span>
+                </div>
+                <img class="img-fluid" src="img/sumup-solotill.png">
+              </a>
+            </div>
+            <div class="item col-sm-6 col-md-4 col-lg-4 mb-4">
+              <a href="sumup-prototyping.html" class="item-wrap fancybox">
+                <div class="work-info">
+                  <h3>In-House Prototyping</h3>
+                  <span>Manufacturing Engineer</span>
+                </div>
+                <img class="img-fluid" src="img/sumup-prototyping.png">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6"></div>
+        <div class="col-sm-6 social text-md-right">
+          <a href="https://www.linkedin.com/in/alexjshackleton/"><span class="icofont-linkedin"></span></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/jquery/jquery-migrate.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="vendor/easing/easing.min.js"></script>
+  <script src="vendor/php-email-form/validate.js"></script>
+  <script src="vendor/isotope/isotope.pkgd.min.js"></script>
+  <script src="vendor/aos/aos.js"></script>
+  <script src="vendor/owlcarousel/owl.carousel.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

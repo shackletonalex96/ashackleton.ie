@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Sensi</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta name="robots" content="noindex, nofollow">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="img/cube.png" rel="icon">
+  <link href="img/cube.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700|Raleway:400,700&display=swap"
+    rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="vendor/line-awesome/css/line-awesome.min.css" rel="stylesheet">
+  <link href="vendor/aos/aos.css" rel="stylesheet">
+  <link href="vendor/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+    Template Name: MyPortfolio
+    Template URL: https://bootstrapmade.com/myportfolio-bootstrap-portfolio-website-template/
+    Author: BootstrapMade.com
+    Author URL: https://bootstrapmade.com/
+  ======================================================= -->
+</head>
+
+<body>
+  <!-- Password Protection -->
+  <script>
+    (function() {
+      if (sessionStorage.getItem('portfolio_auth') !== 'true') {
+        window.location.href = 'login.html';
+      }
+    })();
+  </script>
+
+
+
+  <div class="collapse navbar-collapse custom-navmenu" id="main-navbar">
+    <div class="container py-2 py-md-5">
+      <div class="row align-items-start">
+        <div class="col-md-2">
+          <ul class="custom-menu">
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="about.html">About Me</a></li>
+
+            <li><a href="works.html">Projects</a></li>
+          </ul>
+        </div>
+        <div class="col-md-6 d-none d-md-block  mr-auto">
+
+        </div>
+        <div class="col-md-4 d-none d-md-block">
+          <h3>Contact Me!</h3>
+          <p>Get in touch! <br> <a href="#">alex@shackleton.ie</a></p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <nav class="navbar navbar-light custom-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Portfolio.</a>
+
+      <a href="#" class="burger" data-toggle="collapse" data-target="#main-navbar">
+        <span></span>
+      </a>
+
+    </div>
+  </nav>
+
+
+
+  <main id="main">
+
+    <div class="site-section">
+      <div class="container">
+        <div class="row mb-4 align-items-center">
+          <div class="col-md-6" data-aos="fade-up">
+
+            <h2>Sensi</h2>
+            <h3>2019-2020</h3>
+            <p>Dublin-based clean-tech startup focused on waste management solutions.</p>
+
+          </div>
+
+
+        </div>
+      </div>
+
+      <div class="site-section pb-0">
+        <div class="container">
+          <div class="row align-items-stretch">
+            <div class="col-md-8" data-aos="fade-up">
+              <img src="img/sensi2.png" alt="Image" class="img-fluid">
+            </div>
+            <div class="col-md-3 ml-auto" data-aos="fade-up" data-aos-delay="100">
+              <div class="sticky-content">
+                <h3 class="h3">Main Roles</h3>
+                <p class="mb-4"><span class="text-muted">Mechanical Design and Computer Vision Developer</span></p>
+
+                <h4 class="h4 mb-3">What I did</h4>
+                <ul class="list-unstyled list-line mb-5">
+                  <li>Mechanical Design.</li>
+                  <li>Waste Recognition Model.</li>
+                  <li>User Testing.</li>
+                </ul>
+                <p>Sensi enlisted the services of TCD in the development of aspects of the minimal viable prototype for thie RVM (Reverse Vending Machine) product.
+                This project was funded through EI's Innovation Voucher scheme. The work completed under this contract included;</p>
+                <div class="mb-5">
+                  <p>The startup is currently still operating. More information can be found at the
+                    website below.</p>
+
+                </div>
+                <p><a href="https://www.businesspost.ie/post-plus/making-it-work-dublin-start-ups-reverse-vending-machine-uses-ai-to-reward-recycling/" class="readmore">Read Article</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+      <div class="site-section">
+        <div class="container">
+          <div class="row mb-4 align-items-center">
+            <div class="col-md-12" data-aos="fade-up">
+              <h3 class="h3">Mechanical Design</h3>
+              <p class="mb-4"><span class="text-muted">RVM opening mechanism</span></p>
+              <p>The opening for the RVM was the main mechanical design problem we were tasked with. The mechanism has to be able to open and close quickly to react to react to either correct/incorrect classifications.
+               It also needed to be easy to clean as the units had to conform to strict hygiene standards. We eventually settled on a augmented aperture design with rubber seals on the blades.
+               This allowed us the operational speed we required while also having minimal space for food/waste build up in the opening mechanism.</p>
+            </div>
+            <div class="col-md-12" data-aos="fade-up">
+              <h3 class="h3">Waste Recognition Model</h3>
+              <p class="mb-4"><span class="text-muted">Neural network trained to classify recyclables</span></p>
+              <p>I built a CNN (Convolution Neural Network) capable of classifying images of waste products in up to 6 different categories:
+                <ul class="list-unstyled list-line mb-5">
+                  <li>Non-recyclables</li>
+                  <li>Metal</li>
+                  <li>Paper</li>
+                  <li>Cardboard</li>
+                  <li>Plastic</li>
+                  <li>Glass</li>
+                </ul>
+              </p>
+              <p> The model was trained using the <a href="https://github.com/garythung/trashnet">TrashNet</a> database.
+                Initial results showed the model had a ~60% accuracy at the 6 category classification task however when the output was reduced to a binary one (recyclable/non-recyclable) the accuracy was increased to ~88%. This was sufficient for the initial round of user tests. </p>
+            </div>
+            <div class="col-md-12" data-aos="fade-up">
+              <h3 class="h3">User testing</h3>
+              <p class="mb-4"><span class="text-muted">MVP validation</span></p>
+              <p>The final part of the contracted work was to develop a user testing plan for the clients. We identified some suitable areas around campus for the tests to occur. We outlined the key results to try to focus on from an investor perspective. We also create the testing plan and data collection procedure for each of the test locations.</p>
+
+            </div>
+
+          </div>
+        </div>
+
+
+
+
+        <div class="site-section">
+          <div class="container">
+            <div class="row justify-content-center text-center mb-4">
+              <div class="col-5">
+                <h3 class="h3 heading">Project Sponsors and Partners</h3>
+
+              </div>
+            </div>
+            <div class="row">
+
+              <div class="col-4 col-sm-4 col-md-3"></div>
+
+              <div class="col-4 col-sm-4 col-md-2">
+                <a href="https://www.enterprise-ireland.com/en/" class="client-logo"><img src="img/logo/EI-logo.png"
+                    alt="Image" class="img-fluid"></a>
+              </div>
+
+              <div class="col-4 col-sm-4 col-md-2">
+                <a href="https://www.tcd.ie/" class="client-logo"><img src="img/logo/tcd-logo.png" alt="Image"
+                    class="img-fluid"></a>
+              </div>
+
+              <div class="col-4 col-sm-4 col-md-2">
+                <a href="https://sensi.ie/" class="client-logo"><img src="img/logo/Sensilogo.png" alt="Image"
+                    class="img-fluid"></a>
+              </div>
+              <div class="col-4 col-sm-4 col-md-4"></div>
+            </div>
+          </div>
+
+
+        <div class="site-section pb-0">
+          <div class="container">
+            <div class="row justify-content-center text-center mb-4">
+              <div class="col-5">
+                <h3 class="h3 heading">More Projects</h3>
+
+              </div>
+            </div>
+
+            <div class="row" data-aos="fade-up" data-aos-delay="200">
+              <div class="item design col-sm-6 col-md-4 col-lg-4 mb-4">
+                <a href="belu.html" class="item-wrap fancybox">
+                  <div class="work-info">
+                    <h3>Bélú Solutions</h3>
+                    <span>Co-Founder</span>
+                  </div>
+                  <img class="img-fluid" src="img/beluicon.png">
+                </a>
+              </div>
+              <div class="item civ col-sm-6 col-md-4 col-lg-4 mb-4">
+                <a href="neom.html" class="item-wrap fancybox">
+                  <div class="work-info">
+                    <h3>NEOM</h3>
+                    <span>MEICA Engineer</span>
+                  </div>
+                  <img class="img-fluid" src="img/neomicon.jpg">
+                </a>
+              </div>
+              <div class="item design col-sm-6 col-md-4 col-lg-4 mb-4">
+                <a href="hydra.html" class="item-wrap fancybox">
+                  <div class="work-info">
+                    <h3>Hydra Diagnostics</h3>
+                    <span>Technical Lead</span>
+                  </div>
+                  <img class="img-fluid" src="img/hydrad-icon.png">
+                </a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          
+          
+        </div>
+        <div class="col-sm-6 social text-md-right">
+          <a href="https://www.linkedin.com/in/alexjshackleton/"><span class="icofont-linkedin"></span></a>
+          
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Vendor JS Files -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/jquery/jquery-migrate.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="vendor/easing/easing.min.js"></script>
+  <script src="vendor/php-email-form/validate.js"></script>
+  <script src="vendor/isotope/isotope.pkgd.min.js"></script>
+  <script src="vendor/aos/aos.js"></script>
+  <script src="vendor/owlcarousel/owl.carousel.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Alex Shackleton — Portfolio</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta name="robots" content="noindex, nofollow">
+  <link href="img/cube.png" rel="icon">
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700|Raleway:400,700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: "Inconsolata", monospace;
+      background: #0d1e2d;
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .login-container {
+      text-align: center;
+      padding: 40px;
+      max-width: 400px;
+      width: 90%;
+    }
+    h1 {
+      font-family: "Raleway", sans-serif;
+      font-size: 28px;
+      margin-bottom: 8px;
+      font-weight: 700;
+    }
+    .subtitle {
+      color: rgba(255,255,255,0.6);
+      font-size: 14px;
+      margin-bottom: 40px;
+    }
+    .input-group {
+      display: flex;
+      gap: 0;
+      margin-bottom: 16px;
+    }
+    input[type="password"] {
+      flex: 1;
+      padding: 14px 16px;
+      font-family: "Inconsolata", monospace;
+      font-size: 16px;
+      border: 1px solid rgba(255,255,255,0.2);
+      border-right: none;
+      background: rgba(255,255,255,0.05);
+      color: #fff;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+    input[type="password"]:focus {
+      border-color: rgba(255,255,255,0.5);
+    }
+    input[type="password"]::placeholder {
+      color: rgba(255,255,255,0.3);
+    }
+    button {
+      padding: 14px 24px;
+      font-family: "Inconsolata", monospace;
+      font-size: 14px;
+      text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      background: #fff;
+      color: #0d1e2d;
+      border: 1px solid #fff;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    button:hover {
+      background: transparent;
+      color: #fff;
+    }
+    .error {
+      color: #e74c3c;
+      font-size: 13px;
+      min-height: 20px;
+      margin-top: 4px;
+    }
+    .footer-text {
+      color: rgba(255,255,255,0.3);
+      font-size: 12px;
+      margin-top: 60px;
+    }
+    .footer-text a { color: rgba(255,255,255,0.5); }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h1>Alex Shackleton</h1>
+    <p class="subtitle">Product & Manufacturing Engineer</p>
+    <div class="input-group">
+      <input type="password" id="pw" placeholder="Enter password" autofocus>
+      <button onclick="checkPassword()">Enter</button>
+    </div>
+    <p class="error" id="error"></p>
+    <p class="footer-text">
+      <a href="mailto:alex@shackleton.ie">alex@shackleton.ie</a>
+    </p>
+  </div>
+  <script>
+    function checkPassword() {
+      var pw = document.getElementById('pw').value;
+      if (pw === '-shacklA26-') {
+        sessionStorage.setItem('portfolio_auth', 'true');
+        window.location.href = 'index.html';
+      } else {
+        document.getElementById('error').textContent = 'Incorrect password';
+        document.getElementById('pw').value = '';
+        document.getElementById('pw').focus();
+      }
+    }
+    document.getElementById('pw').addEventListener('keypress', function(e) {
+      if (e.key === 'Enter') checkPassword();
+    });
+  </script>
+</body>
+</html>

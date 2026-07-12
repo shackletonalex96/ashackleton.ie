@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Solo Lite</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta name="robots" content="noindex, nofollow">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+  <link href="img/cube.png" rel="icon">
+  <link href="img/cube.png" rel="apple-touch-icon">
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700|Raleway:400,700&display=swap" rel="stylesheet">
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="vendor/line-awesome/css/line-awesome.min.css" rel="stylesheet">
+  <link href="vendor/aos/aos.css" rel="stylesheet">
+  <link href="vendor/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  
+<style>
+  .dev-timeline {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px 60px 20px;
+    max-width: 700px;
+    margin: 0 auto;
+    position: relative;
+  }
+  .dev-timeline .tl-line {
+    flex: 1;
+    height: 3px;
+    background: #ccc;
+  }
+  .dev-timeline .tl-line.active {
+    background: #0d1e2d;
+  }
+  .dev-timeline .tl-point {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    flex-shrink: 0;
+  }
+  .dev-timeline .tl-dot {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: #ccc;
+    border: 3px solid #ccc;
+    z-index: 1;
+  }
+  .dev-timeline .tl-dot.active {
+    background: #0d1e2d;
+    border-color: #0d1e2d;
+  }
+  .dev-timeline .tl-label {
+    position: absolute;
+    top: 36px;
+    font-family: "Inconsolata", monospace;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #ccc;
+    white-space: nowrap;
+  }
+  .dev-timeline .tl-label.active {
+    color: #0d1e2d;
+  }
+  @media (max-width: 480px) {
+    .dev-timeline .tl-label { font-size: 10px; top: 30px; }
+    .dev-timeline .tl-dot { width: 22px; height: 22px; }
+  }
+</style>
+
+</head>
+
+<body>
+  <!-- Password Protection -->
+  <script>
+    (function() {
+      if (sessionStorage.getItem('portfolio_auth') !== 'true') {
+        window.location.href = 'login.html';
+      }
+    })();
+  </script>
+
+  <div class="collapse navbar-collapse custom-navmenu" id="main-navbar">
+    <div class="container py-2 py-md-5">
+      <div class="row align-items-start">
+        <div class="col-md-2">
+          <ul class="custom-menu">
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="about.html">About Me</a></li>
+            <li><a href="works.html">Projects</a></li>
+          </ul>
+        </div>
+        <div class="col-md-6 d-none d-md-block mr-auto"></div>
+        <div class="col-md-4 d-none d-md-block">
+          <h3>Contact Me!</h3>
+          <p>Get in touch! <br> <a href="#">alex@shackleton.ie</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <nav class="navbar navbar-light custom-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Portfolio.</a>
+      <a href="#" class="burger" data-toggle="collapse" data-target="#main-navbar">
+        <span></span>
+      </a>
+    </div>
+  </nav>
+
+  <main id="main">
+
+    <div class="site-section">
+      <div class="container">
+        <div class="row mb-4 align-items-center">
+          <div class="col-md-6" data-aos="fade-up">
+            <h2>Solo Lite</h2>
+            <h3>2024 – 2025</h3>
+            <p>SumUp's flagship low-cost card reader — the first product I was involved with at SumUp.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="site-section pb-0">
+        <div class="container">
+          <div class="row align-items-stretch">
+            <div class="col-md-8" data-aos="fade-up">
+              <img src="img/sumup-sololite.png" alt="Solo Lite" class="img-fluid">
+            </div>
+            <div class="col-md-3 ml-auto" data-aos="fade-up" data-aos-delay="100">
+              <div class="sticky-content">
+                <h3 class="h3">Main Roles</h3>
+                <p class="mb-4"><span class="text-muted">Manufacturing & Process Engineer</span></p>
+                <div class="mb-5">
+                  <p>The Solo Lite was the first SumUp product I worked on. I joined during the later stages of the preliminary manufacturing test build and quickly became a key contributor to the product's successful launch and subsequent production scale-up.</p>
+                </div>
+                <h4 class="h4 mb-3">What I did</h4>
+                <ul class="list-unstyled list-line mb-5">
+                  <li>Product Failure Analysis.</li>
+                  <li>Root Cause Investigation.</li>
+                  <li>Manufacturing Line Scale-Up.</li>
+                  <li>Process Optimisation.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="site-section pb-0" style="padding-top: 0;">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-10">
+              <div class="dev-timeline">
+  <div class="tl-point"><div class="tl-dot"></div><span class="tl-label">Proto</span></div>
+  <div class="tl-line"></div>
+  <div class="tl-point"><div class="tl-dot"></div><span class="tl-label">EVT</span></div>
+  <div class="tl-line"></div>
+  <div class="tl-point"><div class="tl-dot"></div><span class="tl-label">DVT</span></div>
+  <div class="tl-line"></div>
+  <div class="tl-point"><div class="tl-dot active"></div><span class="tl-label active">PVT</span></div>
+  <div class="tl-line active"></div>
+  <div class="tl-point"><div class="tl-dot active"></div><span class="tl-label active">MP</span></div>
+</div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="site-section">
+        <div class="container">
+          <div class="row mb-4 align-items-center">
+
+            <div class="col-md-12" data-aos="fade-up">
+              <h3 class="h3">Product Failure Analysis</h3>
+              <p class="mb-4"><span class="text-muted">Systematic investigation of early build failures ahead of product launch.</span></p>
+              <p>During the preliminary manufacturing test builds I conducted an in-depth product failure analysis campaign, personally disassembling and analysing over 400 units. Through this process I identified one critical mechanical issue that directly influenced the final mechanical design of the product, as well as a critical embedded software bug that was patched before launch. I also uncovered several process-related issues on the manufacturing line, all of which were rectified before mass production began. This systematic approach to failure analysis ensured that the product launched with minimal issues for end customers.</p>
+            </div>
+
+            <div class="col-md-12" data-aos="fade-up">
+              <h3 class="h3">Manufacturing Line Scale-Up</h3>
+              <p class="mb-4"><span class="text-muted">Doubling production capacity while simultaneously improving efficiency.</span></p>
+              <p>Following the successful product launch, I became a key member of the team tasked with doubling the capacity of the Solo Lite manufacturing line. I performed an in-depth process analysis across the full line, identifying bottlenecks and inefficiencies at each station. The outcome was not only a doubling of throughput capacity but also a 20% reduction in the value-added time per unit — meaning we were producing twice as many devices, each assembled more efficiently than before.</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="site-section pb-0">
+        <div class="container">
+          <div class="row justify-content-center text-center mb-4">
+            <div class="col-5">
+              <h3 class="h3 heading">More Projects</h3>
+            </div>
+          </div>
+          <div class="row" data-aos="fade-up" data-aos-delay="200">
+            <div class="item col-sm-6 col-md-4 col-lg-4 mb-4">
+              <a href="sumup-solo.html" class="item-wrap fancybox">
+                <div class="work-info">
+                  <h3>Solo</h3>
+                  <span>Manufacturing & Mechatronics Engineer</span>
+                </div>
+                <img class="img-fluid" src="img/sumup-solo.png">
+              </a>
+            </div>
+            <div class="item col-sm-6 col-md-4 col-lg-4 mb-4">
+              <a href="sumup-mfd.html" class="item-wrap fancybox">
+                <div class="work-info">
+                  <h3>MFD & CFD</h3>
+                  <span>Manufacturing & Mechanical Engineer</span>
+                </div>
+                <img class="img-fluid" src="img/sumup-mfd.png">
+              </a>
+            </div>
+            <div class="item col-sm-6 col-md-4 col-lg-4 mb-4">
+              <a href="sumup-terminal.html" class="item-wrap fancybox">
+                <div class="work-info">
+                  <h3>Terminal</h3>
+                  <span>Manufacturing Engineer</span>
+                </div>
+                <img class="img-fluid" src="img/sumup-terminal.png">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6"></div>
+        <div class="col-sm-6 social text-md-right">
+          <a href="https://www.linkedin.com/in/alexjshackleton/"><span class="icofont-linkedin"></span></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/jquery/jquery-migrate.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="vendor/easing/easing.min.js"></script>
+  <script src="vendor/php-email-form/validate.js"></script>
+  <script src="vendor/isotope/isotope.pkgd.min.js"></script>
+  <script src="vendor/aos/aos.js"></script>
+  <script src="vendor/owlcarousel/owl.carousel.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
