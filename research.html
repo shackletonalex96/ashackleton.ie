@@ -58,6 +58,7 @@
             <li class="active"><a href="about.html">About Me</a></li>
 
             <li><a href="works.html">Projects</a></li>
+            <li><a href="how-i-work.html">How I Work</a></li>
           </ul>
         </div>
         <div class="col-md-6 d-none d-md-block  mr-auto">
@@ -87,16 +88,14 @@
 
   <main id="main">
 
-    <div class="site-section">
+    <div class="site-section pb-0">
       <div class="container">
         <div class="row mb-4 align-items-center">
           <div class="col-md-6" data-aos="fade-up">
 
             <h2>Speech Interface</h2>
             <h3>2018-2019</h3>
-            <p>Developing a Speech Interface for use in Assistive Service Robots.</p>
-            <p>This research was conducted as part of my engineering masters program and the continuation of work begun
-              during a summer internship.</p>
+            <p>Built a custom <strong>20-hour labelled audio dataset</strong> for real-world speech detection and developed a lightweight CNN benchmarked against WebRTC VAD, ResNet50, and VGG19. Evaluated performance across <strong>binary, 3-class, and 6-class</strong> classification tasks.</p>
           </div>
 
 
@@ -116,7 +115,7 @@
                     classifier.</span></p>
 
                 <div class="mb-5">
-                  <p>This is module that distinguishes between speech directed at the robot and other environmental
+                  <p>This is a module that distinguishes between speech directed at the robot and other environmental
                     noises.</p>
 
                 </div>
@@ -139,7 +138,7 @@
       </div>
     </div>
 
-    <div class="site-section">
+    <div class="site-section pb-0">
       <div class="container">
         <div class="row mb-4 align-items-center">
           <div class="col-md-12" data-aos="fade-up">
@@ -157,11 +156,11 @@
             <h3 class="h3">Stage 1:</h3>
             <p class="mb-4"><span class="text-muted">Speech Processing.</span></p>
             <p>The first thing that needed to be decided on was a metric to judge the sound samples on.
-              Through an extensive literature multiple speech properties were examined and compared until
+              Through an extensive literature review multiple speech properties were examined and compared until
               finally I settled on using Mel Frequency Spectrograms. It seemed like the perfect choice as
               the mel scale amplifies frequencies associated with human voice and the image based nature of
               the spectrogram made for easy integration into the CNN.
-              Audio clips would be fed into a script to split the audio files in 4 second chunks.This
+              Audio clips would be fed into a script to split the audio files in 4 second chunks. This
               strayed from the norm as sounds are usually analyzed in much shorter windows ( < 250ms). However I wasn't
                 interested in the content of the speech (i.e exactly what someone was saying), just in the presence of
                 speech in a sample so I did not need the same level of fidelity. Then each clip was converted from a wav
@@ -176,13 +175,13 @@
               my research was more focused on on creating something to be used in a real-world setting
               therefore creating my own database was an essential part of the process.
               I used subsets of Google's AudioSet and the UrbanSound8K dataset along with field recordings
-              in order to try and create a robust recognition model. Podcasts , Audiobooks and actual
+              in order to try and create a robust recognition model. Podcasts, audiobooks and actual
               recordings of one sided conversations were used for the samples of direct speech. Ambient
-              sounds such as kitchen noises, field recording of libraries ,cafes and hallways and other
+              sounds such as kitchen noises, field recording of libraries, cafes and hallways and other
               environmental sounds clips were used as the non speech classes. I also mixed speech and non
               speech samples together to varying degrees in order to discourage the model from overfitting
               to the training data.
-              The dataset consisted of 20 hours of audio files, 10 hours of speech (50/50 male/female
+              The dataset consisted of <strong>20 hours</strong> of audio files, 10 hours of speech (50/50 male/female
               voices) and 10 hours of environmental noise (30% included some level of background
               conversation).</p>
             <h3 class="h3">Stage 3:</h3>
@@ -194,35 +193,35 @@
               The WebRTC VAD (voice activity detection) algorithm was chosen as the benchmark mark for my
               models performance at completing its classification task. The WebRTC model is considered one
               of the gold standards in Voice Activity Detection so it was an obvious choice to compare
-              against.However it runs off completely different input parameters and uses a statistically
-              model rather than and a neural network therefore I would have have to chose another model for
+              against. However it runs off completely different input parameters and uses a statistical
+              model rather than a neural network, therefore I would have to choose another model for
               comparison to see how well it was implemented. I chose both the ResNet 50 and VGG 19 for this
-              purpose as they are well established open sourced image classification models . Using transfer
+              purpose as they are well established open sourced image classification models. Using transfer
               learning I was able to adjust the model weights to fit my purpose using my new dataset.
-              The custom convolutional neural network that was developed as part of this research combined
-              the strived to both be light weight, like the WebRTC, so it could be used on smaller embedded
-              systems but still retain some of the powerful pattern recognition adaptability of the CNNs.
+              The custom convolutional neural network developed as part of this research strived to be
+              lightweight, like the WebRTC, so it could be used on smaller embedded systems while still
+              retaining some of the powerful pattern recognition adaptability of CNNs.
 
             </p>
             <h3 class="h3">Stage 4:</h3>
             <p class="mb-4"><span class="text-muted">Testing and Analysis.</span></p>
-            <p>For the testing the dataset was given a 70/20/10 split. 70% being used model training, 20%
+            <p>For the testing the dataset was given a <strong>70/20/10 split</strong>. 70% being used for model training, 20%
               for validation and the remaining 10% remaining unseen by the model to ensure fair testing.
-              Each model also was put through 3 classification tasks Binary(Speech/NonSpeech) 3 Class with
+              Each model also was put through 3 classification tasks: Binary (Speech/NonSpeech), 3 Class with
               added the background speech class and 6 Class in which the background noise was broken up into
               several subsections. The models computation time was also recorded.
               The models precision and recall were used as points of comparison. Precision being how many
-              many times it correctly identified a sample and recall describing how well it could recognise
-              a particular class. Both were then combined to get a full picture of each models accuracy.
+              times it correctly identified a sample and recall describing how well it could recognise
+              a particular class. Both were then combined to get a full picture of each model's accuracy.
               The neural networks were further dissected with layer activation information being extracted.
-              This could allowed me to take a peek under the hood of these neural networks and get an idea
-              of what patterns and feature were causing each layer to activate ,thus how the model was
+              This allowed me to take a peek under the hood of these neural networks and get an idea
+              of what patterns and features were causing each layer to activate, thus how the model was
               making its classification decisions.
 
             </p>
           </div>
         </div>
-        <div class="site-section">
+        <div class="site-section pb-0">
           <div class="container">
             <div class="row justify-content-center text-center mb-4">
               <div class="col-5">
@@ -230,13 +229,7 @@
 
               </div>
             </div>
-            <div class="row">
-              <div class="col-4 col-sm-4 col-md-2">
-
-              </div>
-              <div class="col-4 col-sm-4 col-md-2">
-
-              </div>
+            <div class="row justify-content-center">
               <div class="col-4 col-sm-4 col-md-2">
                 <a href="https://www.tcd.ie/mecheng/research/robotics/" class="client-logo"><img src="img/logo/tcd-logo.png" alt="Image"
                     class="img-fluid"></a>
@@ -244,12 +237,6 @@
               <div class="col-4 col-sm-4 col-md-2">
                 <a href="https://www.akara.ai/" class="client-logo"><img src="img/logo/akara-logo.png" alt="Image"
                     class="img-fluid"></a>
-              </div>
-              <div class="col-4 col-sm-4 col-md-2">
-
-              </div>
-              <div class="col-4 col-sm-4 col-md-2">
-
               </div>
 
             </div>
@@ -281,7 +268,7 @@
                   <h3>Electronics Testing & Verification</h3>
                   <span>Test Engineer & Mechanical Designer</span>
                 </div>
-                <img class="img-fluid" src="img/electesticon.jpg">
+                <img class="img-fluid" src="img/electest-hero.png">
               </a>
             </div>
               <div class="item design col-sm-6 col-md-4 col-lg-4 mb-4">
