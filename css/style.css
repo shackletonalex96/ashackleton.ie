@@ -171,6 +171,36 @@ h6,
   visibility: visible;
 }
 
+@media (max-width: 991px) {
+  .item .item-wrap {
+    flex-direction: column;
+    height: auto;
+    padding-bottom: 15px;
+  }
+
+  .item .item-wrap img {
+    height: 280px;
+    flex-shrink: 0;
+  }
+
+  .item .item-wrap:after {
+    display: none;
+  }
+
+  .item .item-wrap > .work-info {
+    position: static;
+    transform: none;
+    opacity: 1;
+    visibility: visible;
+    margin-top: 12px;
+    color: #0d1e2d;
+  }
+
+  .item .item-wrap > .work-info span {
+    color: #777;
+  }
+}
+
 .testimonial-wrap {
   padding: 50px 50px 80px 50px;
   background: #eceff2;
