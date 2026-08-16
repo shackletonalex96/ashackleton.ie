@@ -116,6 +116,22 @@ h6,
   transform: scale(1);
 }
 
+.item .item-wrap .project-grid {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 1px;
+}
+
+.item .item-wrap .project-grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: .3s transform ease;
+}
+
 .row.align-items-stretch > .col-md-8 img.img-fluid {
   height: 450px;
   width: 100%;
